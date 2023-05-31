@@ -80,7 +80,7 @@ def get_examen_email(code):
                 )
                 return response
 
-        return 'No se encontraron exámenes para el paciente con el email {}'.format(code), 404
+        return 'No se encontraron exámenes para el paciente con email {}'.format(code), 404
 
     finally:
         con.close()
